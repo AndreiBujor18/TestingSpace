@@ -4,6 +4,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Va urma...</title>
+  <!-- Securitate: Content Security Policy (variantă strictă pentru site static) -->
+  <meta http-equiv="Content-Security-Policy"
+      content="default-src 'self'; img-src 'self' data: https:;
+               script-src 'self'; style-src 'self';
+               object-src 'none'; base-uri 'self';
+               frame-ancestors 'none'; form-action 'self';
+               connect-src 'self'; upgrade-insecure-requests">
+  <!-- Trimite doar ce trebuie în Referer -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
 
   <!-- SEO -->
   <link rel="canonical" href="https://www.testez.space/">
