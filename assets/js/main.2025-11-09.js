@@ -14,14 +14,4 @@ document.addEventListener("DOMContentLoaded", () => {
     });
     nowEl.textContent = fmt.format(now);
   }
-
-  // Buton „bust cache”: reîncarcă pagina cu un query param unic
-  const refreshBtn = document.getElementById("refresh");
-  if (refreshBtn) {
-    refreshBtn.addEventListener("click", () => {
-      const url = new URL(window.location.href);
-      url.searchParams.set("v", `${BUILD_VERSION}.${Date.now()}`);
-      window.location.replace(url.toString());
-    });
-  }
 });

@@ -60,11 +60,6 @@ p { margin: 0; }
 
 .card p + p { margin-top: 0.35rem; }
 
-/* ===== Actions ===== */
-.actions {
-  margin-top: 1rem;
-}
-
 .btn {
   appearance: none;
   border: 0;
@@ -77,10 +72,6 @@ p { margin: 0; }
   transition: transform .12s ease, filter .12s ease, box-shadow .2s ease;
   box-shadow: 0 6px 18px rgba(0,0,0,.25);
 }
-
-.btn:hover { filter: brightness(0.98); transform: translateY(-1px); }
-.btn:active { transform: translateY(0); }
-.btn:focus-visible { outline: 3px solid #94f7ee; outline-offset: 3px; }
 
 /* ===== Meta info ===== */
 .version {
